@@ -65,42 +65,10 @@ Variables de `css/variables.css`:
 
 ![Lighthouse](img/accessibility.png)
 
-### Navegación con teclado
+### Vista en computadora
 
-![Navegación](img/Navegacion.png)
+![Vista en computadora](img/computadora.png)
 
-### Zoom 200% - Prueba 1
+### Vista en teléfono
 
-![Zoom 1](img/Zoom-1.png)
-
-### Zoom 200% - Prueba 2
-
-![Zoom 2](img/Zoom-2.png)
-
-### Zoom 200% - Prueba 3
-
-![Zoom 3](img/Zoom-3.png)
-
-### Index (Escritorio)
-
-![Index](img/index.png)
-
-### Login
-
-![Login](img/login.png)
-
-### Registro de candidato
-
-![Registro](img/registro-candidato.png)
-
-### Mis solicitudes
-
-![Solicitudes](img/mis-solicitudes.png)
-
-### Vacante
-
-![Vacante](img/vacante.png)
-
-### Empresa Vacantes
-
-![Empresa](img/empresa-vacantes.png)
+![Vista en teléfono](img/telefono.png)
