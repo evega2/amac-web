@@ -35,6 +35,7 @@ validación nativa, etiquetas accesibles y controles de teclado.
 
 - Ernesto Vega Bortoni 644175: estructura inicial, contenido de las seis páginas obligatorias, estilos base y correcciones de accesibilidad en formularios y pie de página.
 - Eugenio Espeleta Alanís 625122: completó las vistas, estilos responsive y formularios accesibles.
+- Cristian Rogelio Elizondo Gómez 631683: Revisión y correción de errores de css para congruencia visual, a la vez que verificar el funcionamiento correcto del html y realizo pruebas de verificación antes de entrega.
 
 ## Colores y tipografía
 
