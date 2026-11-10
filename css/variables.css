@@ -1,12 +1,12 @@
 :root {
   --color-primario: #202945;
   --color-texto: #202945;
-  --color-fondo: #f5f6f8;
+  --color-fondo: #ffffff;
   --color-superficie: #ffffff;
-  --color-borde: #aab2c0;
-  --color-enlace: #174ea6;
-  --color-exito: #176b45;
-  --color-peligro: #9b1c1c;
+  --color-borde: #202945;
+  --color-enlace: ##202945;
+  --color-exito: #202945;
+  --color-peligro: #202945;
 
   --fuente-base: "Work Sans", Arial, sans-serif;
   --texto-base: 1.125rem;
