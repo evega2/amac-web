@@ -34,6 +34,7 @@ validación nativa, etiquetas accesibles y controles de teclado.
 ## Integrantes
 
 - Ernesto Vega Bortoni 644175: estructura inicial, contenido de las seis páginas obligatorias, estilos base y correcciones de accesibilidad en formularios y pie de página.
+- Eugenio Espeleta Alanís 625122: completó las vistas, estilos responsive y formularios accesibles.
 
 ## Colores y tipografía
 
@@ -56,3 +57,5 @@ Variables de `css/variables.css`:
 - `.formulario` y `.grupo-campos`: formularios.
 - `.estado`, `.estado-aceptada` y `.estado-rechazada`: estados de solicitudes.
 - `.filtros`: buscador y filtros de vacantes.
+
+
