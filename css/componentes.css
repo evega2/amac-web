@@ -1,0 +1,21 @@
+.boton {
+  display: inline-block;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0.625rem var(--espacio-l);
+  border: 0;
+  border-radius: var(--radio);
+  font-family: var(--fuente-base);
+  font-size: var(--texto-base);
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-fondo);
+  background-color: var(--color-primario);
+  cursor: pointer;
+}
+
+.boton:hover {
+  text-decoration: underline;
+}

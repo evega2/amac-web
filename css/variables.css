@@ -1,0 +1,16 @@
+:root {
+  --color-primario: #202945;
+  --color-texto: #202945;
+  --color-fondo: #ffffff;
+  --color-borde: #667085;
+
+  --fuente-base: "Work Sans", Arial, sans-serif;
+  --texto-base: 1.125rem;
+  --texto-h1: 2rem;
+  --texto-h2: 1.5rem;
+
+  --espacio-s: 0.5rem;
+  --espacio-m: 1rem;
+  --espacio-l: 1.5rem;
+  --radio: 0.5rem;
+}
