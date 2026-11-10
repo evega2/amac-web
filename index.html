@@ -26,6 +26,90 @@
 
   <main id="principal" class="contenedor" tabindex="-1">
     <h1>Listado de vacantes</h1>
+
+    <form class="formulario" role="search">
+      <div class="campo-formulario">
+        <label for="busqueda">Buscar empleo</label>
+        <input type="search" id="busqueda" name="busqueda" placeholder="Puesto, empresa o ubicación">
+      </div>
+      <div class="campo-formulario">
+        <label for="horario">Horario</label>
+        <select id="horario" name="horario">
+          <option value="">Todos los horarios</option>
+          <option value="matutino">Matutino</option>
+          <option value="vespertino">Vespertino</option>
+          <option value="medio-tiempo">Medio tiempo</option>
+        </select>
+      </div>
+      <div class="campo-formulario">
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria">
+          <option value="">Todas las categorías</option>
+          <option value="comercio">Comercio</option>
+          <option value="servicios">Servicios</option>
+          <option value="administracion">Administración</option>
+        </select>
+      </div>
+      <button class="boton" type="button">Buscar</button>
+    </form>
+
+    <p>Vacantes de ejemplo para la maqueta.</p>
+    <div class="lista-vacantes">
+      <article class="tarjeta">
+        <h2>Auxiliar de tienda</h2>
+        <p>Empresa Ejemplo</p>
+        <p><strong>Sueldo:</strong> $8,000 MXN al mes</p>
+        <p><strong>Ubicación:</strong> Monterrey, Nuevo León</p>
+        <p><strong>Horario:</strong> Medio tiempo</p>
+        <p><strong>Categoría:</strong> Comercio</p>
+        <a class="boton" href="vacante.html#auxiliar-tienda">Ver vacante</a>
+      </article>
+      <article class="tarjeta">
+        <h2>Recepcionista</h2>
+        <p>Hotel Ejemplo</p>
+        <p><strong>Sueldo:</strong> $9,000 MXN al mes</p>
+        <p><strong>Ubicación:</strong> Monterrey, Nuevo León</p>
+        <p><strong>Horario:</strong> Matutino</p>
+        <p><strong>Categoría:</strong> Servicios</p>
+        <a class="boton" href="vacante.html#recepcionista">Ver vacante</a>
+      </article>
+      <article class="tarjeta">
+        <h2>Auxiliar de oficina</h2>
+        <p>Oficina Ejemplo</p>
+        <p><strong>Sueldo:</strong> $8,500 MXN al mes</p>
+        <p><strong>Ubicación:</strong> Guadalupe, Nuevo León</p>
+        <p><strong>Horario:</strong> Medio tiempo</p>
+        <p><strong>Categoría:</strong> Administración</p>
+        <a class="boton" href="vacante.html#auxiliar-oficina">Ver vacante</a>
+      </article>
+      <article class="tarjeta">
+        <h2>Cajero</h2>
+        <p>Tienda Ejemplo</p>
+        <p><strong>Sueldo:</strong> $9,000 MXN al mes</p>
+        <p><strong>Ubicación:</strong> San Nicolás, Nuevo León</p>
+        <p><strong>Horario:</strong> Vespertino</p>
+        <p><strong>Categoría:</strong> Comercio</p>
+        <a class="boton" href="vacante.html#cajero">Ver vacante</a>
+      </article>
+      <article class="tarjeta">
+        <h2>Jardinero</h2>
+        <p>Servicios Ejemplo</p>
+        <p><strong>Sueldo:</strong> $8,000 MXN al mes</p>
+        <p><strong>Ubicación:</strong> Monterrey, Nuevo León</p>
+        <p><strong>Horario:</strong> Matutino</p>
+        <p><strong>Categoría:</strong> Servicios</p>
+        <a class="boton" href="vacante.html#jardinero">Ver vacante</a>
+      </article>
+      <article class="tarjeta">
+        <h2>Auxiliar de cocina</h2>
+        <p>Cocina Ejemplo</p>
+        <p><strong>Sueldo:</strong> $8,500 MXN al mes</p>
+        <p><strong>Ubicación:</strong> Guadalupe, Nuevo León</p>
+        <p><strong>Horario:</strong> Medio tiempo</p>
+        <p><strong>Categoría:</strong> Servicios</p>
+        <a class="boton" href="vacante.html#auxiliar-cocina">Ver vacante</a>
+      </article>
+    </div>
   </main>
 
   <footer class="pie contenedor" id="ayuda">

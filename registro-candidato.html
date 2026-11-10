@@ -26,6 +26,107 @@
 
   <main id="principal" class="contenedor" tabindex="-1">
     <h1>Registro de candidato</h1>
+
+    <form class="formulario">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div class="campo-formulario">
+          <label for="nombre">Nombre(s)</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="apellido-paterno">Apellido paterno</label>
+          <input type="text" id="apellido-paterno" name="apellido-paterno" autocomplete="family-name" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="apellido-materno">Apellido materno</label>
+          <input type="text" id="apellido-materno" name="apellido-materno">
+        </div>
+        <div class="campo-formulario">
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" min="18" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="sexo">Sexo</label>
+          <select id="sexo" name="sexo">
+            <option value="">Selecciona una opción</option>
+            <option value="mujer">Mujer</option>
+            <option value="hombre">Hombre</option>
+            <option value="sin-respuesta">Prefiero no decirlo</option>
+          </select>
+        </div>
+        <div class="campo-formulario">
+          <label for="estudios">Máximo nivel de estudios</label>
+          <select id="estudios" name="estudios">
+            <option value="Sin estudios">Sin estudios</option>
+            <option value="Primaria">Primaria</option>
+            <option value="Secundaria">Secundaria</option>
+            <option value="Preparatoria">Preparatoria</option>
+            <option value="Carrera técnica">Carrera técnica</option>
+            <option value="Universidad">Universidad</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contacto y cuenta</legend>
+        <p>Registra al menos un medio de contacto. Si registras ambos, selecciona el preferido.</p>
+        <div class="campo-formulario">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email">
+        </div>
+        <div class="campo-formulario">
+          <label for="celular">Teléfono celular</label>
+          <input type="tel" id="celular" name="celular" autocomplete="tel">
+        </div>
+        <div class="campo-formulario">
+          <label for="contacto">Medio de contacto preferido</label>
+          <select id="contacto" name="contacto">
+            <option value="correo">Correo electrónico</option>
+            <option value="celular">Teléfono celular</option>
+          </select>
+        </div>
+        <div class="campo-formulario">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" autocomplete="new-password" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dirección</legend>
+        <div class="campo-formulario">
+          <label for="calle">Calle y número</label>
+          <input type="text" id="calle" name="calle" autocomplete="address-line1" required>
+        </div>
+        <div class="campo-formulario">
+          <label for="colonia">Colonia</label>
+          <input type="text" id="colonia" name="colonia" autocomplete="address-line2" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experiencia laboral</legend>
+        <div class="campo-formulario">
+          <label for="experiencia">Describe tu experiencia laboral</label>
+          <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+        </div>
+        <div class="campo-formulario">
+          <label for="habilidades">Habilidades</label>
+          <textarea id="habilidades" name="habilidades" rows="3"></textarea>
+        </div>
+      </fieldset>
+
+      <label class="opcion" for="terminos">
+        <input type="checkbox" id="terminos" name="terminos" required>
+        Acepto los términos y condiciones.
+      </label>
+      <label class="opcion" for="privacidad">
+        <input type="checkbox" id="privacidad" name="privacidad" required>
+        Acepto el aviso de privacidad.
+      </label>
+      <button class="boton" type="button">Crear cuenta</button>
+    </form>
+    <a class="boton" href="login.html">Volver a inicio de sesión</a>
   </main>
 
   <footer class="pie contenedor" id="ayuda">
