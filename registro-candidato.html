@@ -1,137 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de candidato | AMAC</title>
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
   <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
-
-  <header class="encabezado contenedor">
-    <p class="nombre-sitio">AMAC · Bolsa de trabajo</p>
-    <nav aria-label="Navegación principal">
-      <a href="index.html">Vacantes</a>
-      <a href="mis-solicitudes.html">Mis solicitudes</a>
-      <a href="login.html">Iniciar sesión</a>
-      <a href="registro-candidato.html">Registro de candidato</a>
-      <a href="empresa-vacantes.html">Panel de empresa</a>
-    </nav>
-    <a class="boton" href="#ayuda">Ayuda AMAC</a>
-  </header>
-
-  <main id="principal" class="contenedor" tabindex="-1">
-    <h1>Registro de candidato</h1>
-
+  <header class="encabezado contenedor"><p class="nombre-sitio">AMAC · Bolsa de trabajo</p><nav aria-label="Navegación principal"><a href="index.html">Vacantes</a><a href="mis-solicitudes.html">Mis solicitudes</a><a href="login.html">Iniciar sesión</a><a href="registro-candidato.html" aria-current="page">Registro de candidato</a><a href="empresa-vacantes.html">Panel de empresa</a></nav><a class="boton" href="#ayuda">Ayuda AMAC</a></header>
+  <main id="principal" class="contenedor" tabindex="-1"><section class="panel"><h1>Registro de candidato</h1>
     <form class="formulario">
-      <fieldset>
-        <legend>Datos personales</legend>
-        <div class="campo-formulario">
-          <label for="nombre">Nombre(s)</label>
-          <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
-        </div>
-        <div class="campo-formulario">
-          <label for="apellido-paterno">Apellido paterno</label>
-          <input type="text" id="apellido-paterno" name="apellido-paterno" autocomplete="family-name" required>
-        </div>
-        <div class="campo-formulario">
-          <label for="apellido-materno">Apellido materno</label>
-          <input type="text" id="apellido-materno" name="apellido-materno">
-        </div>
-        <div class="campo-formulario">
-          <label for="edad">Edad</label>
-          <input type="number" id="edad" name="edad" min="18" required>
-        </div>
-        <div class="campo-formulario">
-          <label for="sexo">Sexo</label>
-          <select id="sexo" name="sexo">
-            <option value="">Selecciona una opción</option>
-            <option value="mujer">Mujer</option>
-            <option value="hombre">Hombre</option>
-            <option value="sin-respuesta">Prefiero no decirlo</option>
-          </select>
-        </div>
-        <div class="campo-formulario">
-          <label for="estudios">Máximo nivel de estudios</label>
-          <select id="estudios" name="estudios">
-            <option value="Sin estudios">Sin estudios</option>
-            <option value="Primaria">Primaria</option>
-            <option value="Secundaria">Secundaria</option>
-            <option value="Preparatoria">Preparatoria</option>
-            <option value="Carrera técnica">Carrera técnica</option>
-            <option value="Universidad">Universidad</option>
-          </select>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Contacto y cuenta</legend>
-        <p>Registra al menos un medio de contacto. Si registras ambos, selecciona el preferido.</p>
-        <div class="campo-formulario">
-          <label for="correo">Correo electrónico</label>
-          <input type="email" id="correo" name="correo" autocomplete="email">
-        </div>
-        <div class="campo-formulario">
-          <label for="celular">Teléfono celular</label>
-          <input type="tel" id="celular" name="celular" autocomplete="tel">
-        </div>
-        <div class="campo-formulario">
-          <label for="contacto">Medio de contacto preferido</label>
-          <select id="contacto" name="contacto">
-            <option value="correo">Correo electrónico</option>
-            <option value="celular">Teléfono celular</option>
-          </select>
-        </div>
-        <div class="campo-formulario">
-          <label for="contrasena">Contraseña</label>
-          <input type="password" id="contrasena" name="contrasena" autocomplete="new-password" required>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Dirección</legend>
-        <div class="campo-formulario">
-          <label for="calle">Calle y número</label>
-          <input type="text" id="calle" name="calle" autocomplete="address-line1" required>
-        </div>
-        <div class="campo-formulario">
-          <label for="colonia">Colonia</label>
-          <input type="text" id="colonia" name="colonia" autocomplete="address-line2" required>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Experiencia laboral</legend>
-        <div class="campo-formulario">
-          <label for="experiencia">Describe tu experiencia laboral</label>
-          <textarea id="experiencia" name="experiencia" rows="4"></textarea>
-        </div>
-        <div class="campo-formulario">
-          <label for="habilidades">Habilidades</label>
-          <textarea id="habilidades" name="habilidades" rows="3"></textarea>
-        </div>
-      </fieldset>
-
-      <label class="opcion" for="terminos">
-        <input type="checkbox" id="terminos" name="terminos" required>
-        Acepto los términos y condiciones.
-      </label>
-      <label class="opcion" for="privacidad">
-        <input type="checkbox" id="privacidad" name="privacidad" required>
-        Acepto el aviso de privacidad.
-      </label>
-      <button class="boton" type="button">Crear cuenta</button>
+      <div class="grupo-campos"><div><label for="nombre">Nombre(s)</label><input id="nombre" name="nombre" required></div><div><label for="apellido-paterno">Apellido paterno</label><input id="apellido-paterno" name="apellido-paterno" required></div><div><label for="apellido-materno">Apellido materno</label><input id="apellido-materno" name="apellido-materno"></div><div><label for="edad">Edad</label><input id="edad" name="edad" type="number" min="16" max="99" required></div><div><label for="sexo">Sexo</label><select id="sexo" name="sexo" required><option value="">Selecciona una opción</option><option>Femenino</option><option>Masculino</option><option>Prefiero no decirlo</option></select></div><div><label for="estudios">Máximo nivel de estudios</label><select id="estudios" name="estudios" required><option value="">Selecciona una opción</option><option>Secundaria</option><option>Preparatoria</option><option>Universidad</option></select></div><div><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" placeholder="Opcional si registras celular"></div><div><label for="telefono">Teléfono celular</label><input id="telefono" name="telefono" type="tel" placeholder="Opcional si registras correo"></div><div><label for="contacto">Medio de contacto preferido</label><select id="contacto" name="contacto" required><option value="">Correo o celular</option><option>Correo electrónico</option><option>Teléfono celular</option></select></div><div><label for="contrasena">Contraseña</label><input id="contrasena" name="contrasena" type="password" minlength="8" required></div><div><label for="calle">Calle y número</label><input id="calle" name="calle" required></div><div><label for="colonia">Colonia</label><input id="colonia" name="colonia" required></div><div><label for="experiencia">Experiencia laboral</label><textarea id="experiencia" name="experiencia"></textarea></div><div><label for="habilidades">Habilidades</label><textarea id="habilidades" name="habilidades"></textarea></div></div>
+      <p class="texto-ayuda">Registra al menos un medio de contacto. Si registras ambos, selecciona el preferido.</p>
+      <label><input type="checkbox" required> Acepto los términos y condiciones.</label><label><input type="checkbox" required> Acepto el aviso de privacidad.</label>
+      <div class="acciones"><a class="boton boton-secundario" href="#terminos">Consultar términos y privacidad</a><button class="boton" type="submit">Crear cuenta</button><a class="boton boton-secundario" href="index.html">Volver</a></div>
     </form>
-    <a class="boton" href="login.html">Volver a inicio de sesión</a>
-  </main>
-
-  <footer class="pie contenedor" id="ayuda">
-    <h2>Ayuda AMAC</h2>
-    <p>Solicita ayuda a AMAC por teléfono. Número pendiente de confirmar.</p>
-  </footer>
+  </section></main>
+  <footer class="pie contenedor" id="ayuda"><h2>Ayuda AMAC</h2><p>Comunícate al <strong>81 1234 5678</strong>.</p></footer>
 </body>
 </html>

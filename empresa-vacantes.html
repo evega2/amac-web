@@ -1,53 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panel de vacantes | AMAC</title>
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
   <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
-
-  <header class="encabezado contenedor">
-    <p class="nombre-sitio">AMAC · Bolsa de trabajo</p>
-    <nav aria-label="Navegación principal">
-      <a href="index.html">Vacantes</a>
-      <a href="mis-solicitudes.html">Mis solicitudes</a>
-      <a href="login.html">Iniciar sesión</a>
-      <a href="registro-candidato.html">Registro de candidato</a>
-      <a href="empresa-vacantes.html">Panel de empresa</a>
-    </nav>
-    <a class="boton" href="#ayuda">Ayuda AMAC</a>
-  </header>
-
-  <main id="principal" class="contenedor" tabindex="-1">
-    <h1>Panel de vacantes</h1>
-
-    <p>Empresa Ejemplo</p>
-    <button class="boton" type="button">Publicar vacante</button>
-
-    <article class="tarjeta">
-      <h2>Auxiliar de tienda</h2>
-      <p><strong>Publicada:</strong> 26/10/2026</p>
-      <p>Estado: <span class="etiqueta-estatus">Activa</span></p>
-      <p><strong>Solicitudes recibidas:</strong> 1</p>
-      <div class="acciones">
-        <a class="boton" href="vacante.html#auxiliar-tienda">Ver vacante</a>
-        <button class="boton" type="button">Editar vacante</button>
-        <button class="boton" type="button">Pausar vacante</button>
-        <button class="boton" type="button">Cerrar vacante</button>
-      </div>
-    </article>
-    <a class="boton" href="index.html">Volver al listado</a>
-  </main>
-
-  <footer class="pie contenedor" id="ayuda">
-    <h2>Ayuda AMAC</h2>
-    <p>Solicita ayuda a AMAC por teléfono. Número pendiente de confirmar.</p>
-  </footer>
+  <header class="encabezado contenedor"><p class="nombre-sitio">AMAC · Bolsa de trabajo</p><nav aria-label="Navegación principal"><a href="index.html">Vacantes</a><a href="mis-solicitudes.html">Mis solicitudes</a><a href="login.html">Iniciar sesión</a><a href="registro-candidato.html">Registro de candidato</a><a href="empresa-vacantes.html" aria-current="page">Panel de empresa</a></nav><a class="boton" href="#ayuda">Ayuda AMAC</a></header>
+  <main id="principal" class="contenedor" tabindex="-1"><section class="panel"><h1>Panel de vacantes</h1><a class="boton" href="#publicar">Publicar vacante</a><div class="vacantes"><article class="tarjeta"><h2>Auxiliar de tienda</h2><p><strong>Publicada:</strong> 26/10/2026</p><p><strong>Estado:</strong> <span class="estado estado-aceptada">Activa</span></p><p><strong>Solicitudes recibidas:</strong> 1</p><div class="acciones"><a class="boton" href="solicitudes-recibidas.html">Ver solicitudes</a><a class="boton" href="#editar">Editar vacante</a><a class="boton" href="#pausar">Pausar vacante</a><a class="boton boton-peligro" href="#cerrar">Cerrar vacante</a></div></article></div><a class="boton boton-secundario" href="index.html">Volver</a></section></main>
+  <footer class="pie contenedor" id="ayuda"><h2>Ayuda AMAC</h2><p>Comunícate al <strong>81 1234 5678</strong>.</p></footer>
 </body>
 </html>

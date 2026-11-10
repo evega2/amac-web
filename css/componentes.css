@@ -20,61 +20,98 @@
   text-decoration: underline;
 }
 
-.tarjeta {
-  padding: var(--espacio-l);
-  margin: var(--espacio-l) 0;
+.boton-secundario {
+  color: var(--color-primario);
+  background: transparent;
   border: 1px solid var(--color-primario);
-  border-radius: 0.75rem;
-  min-width: 0;
 }
 
-.formulario, .campo-formulario, .acciones {
-  display: flex;
-  flex-direction: column;
+.boton-peligro {
+  background-color: var(--color-peligro);
+}
+
+.panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--espacio-l);
+  background: var(--color-superficie);
+}
+
+.formulario {
+  display: grid;
+  gap: var(--espacio-m);
+}
+
+.grupo-campos {
+  display: grid;
+  gap: var(--espacio-m);
+}
+
+.acciones {
+  display: grid;
   gap: var(--espacio-s);
-  margin-bottom: var(--espacio-l);
 }
 
-fieldset {
-  min-width: 0;
-  margin: 0;
+.vacantes, .solicitudes {
+  display: grid;
+  gap: var(--espacio-m);
+  margin-top: var(--espacio-l);
+}
+
+.tarjeta {
   padding: var(--espacio-m);
   border: 1px solid var(--color-borde);
-}
-
-legend {
-  font-weight: bold;
-}
-
-.campo-formulario input,
-.campo-formulario select,
-.campo-formulario textarea {
-  width: 100%;
-  min-width: 0;
-  min-height: 48px;
-  padding: var(--espacio-s);
-  border: 1px solid var(--color-borde);
   border-radius: var(--radio);
-  font: inherit;
-  color: var(--color-texto);
-  background-color: var(--color-fondo);
+  background: var(--color-superficie);
 }
 
-.opcion {
-  display: flex;
-  align-items: center;
-  gap: var(--espacio-s);
-  min-height: 44px;
-}
-
-.etiqueta-estatus {
-  display: inline-block;
-  padding: var(--espacio-s);
-  border: 1px solid var(--color-borde);
-  border-radius: var(--radio);
-  font-weight: bold;
-}
-
-.tarjeta > .boton {
+.tarjeta h2, .tarjeta h3 {
   margin-bottom: var(--espacio-s);
+}
+
+.tarjeta p {
+  margin-bottom: var(--espacio-s);
+}
+
+.tarjeta .boton {
+  width: 100%;
+  margin-top: var(--espacio-s);
+}
+
+.estado {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  color: var(--color-superficie);
+  background: var(--color-primario);
+  font-size: 0.85rem;
+}
+
+.estado-aceptada {
+  background: var(--color-exito);
+}
+
+.estado-rechazada {
+  background: var(--color-peligro);
+}
+
+.filtros {
+  display: grid;
+  gap: var(--espacio-m);
+  padding: var(--espacio-m);
+  background: var(--color-superficie);
+}
+
+@media (min-width: 640px) {
+  .grupo-campos, .filtros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .campo-completo {
+    grid-column: 1 / -1;
+  }
+
+  .acciones {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

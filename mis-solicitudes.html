@@ -1,65 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis solicitudes | AMAC</title>
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
   <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
-
-  <header class="encabezado contenedor">
-    <p class="nombre-sitio">AMAC · Bolsa de trabajo</p>
-    <nav aria-label="Navegación principal">
-      <a href="index.html">Vacantes</a>
-      <a href="mis-solicitudes.html">Mis solicitudes</a>
-      <a href="login.html">Iniciar sesión</a>
-      <a href="registro-candidato.html">Registro de candidato</a>
-      <a href="empresa-vacantes.html">Panel de empresa</a>
-    </nav>
-    <a class="boton" href="#ayuda">Ayuda AMAC</a>
-  </header>
-
-  <main id="principal" class="contenedor" tabindex="-1">
-    <h1>Mis solicitudes</h1>
-
-    <p>Solicitudes de ejemplo para la maqueta.</p>
-    <article class="tarjeta">
-      <h2>Auxiliar de tienda</h2>
-      <p><strong>Empresa:</strong> Empresa Ejemplo</p>
-      <p><strong>Fecha de solicitud:</strong> 26/10/2026</p>
-      <p>Estatus: <span class="etiqueta-estatus">Pendiente</span></p>
-      <a class="boton" href="vacante.html#auxiliar-tienda">Ver vacante</a>
-      <button class="boton" type="button">Cancelar solicitud</button>
-    </article>
-
-    <article class="tarjeta">
-      <h2>Recepcionista</h2>
-      <p><strong>Empresa:</strong> Hotel Ejemplo</p>
-      <p><strong>Fecha de solicitud:</strong> 26/10/2026</p>
-      <p>Estatus: <span class="etiqueta-estatus">Aceptada</span></p>
-      <a class="boton" href="vacante.html#recepcionista">Ver vacante</a>
-    </article>
-
-    <article class="tarjeta">
-      <h2>Auxiliar de oficina</h2>
-      <p><strong>Empresa:</strong> Oficina Ejemplo</p>
-      <p><strong>Fecha de solicitud:</strong> 26/10/2026</p>
-      <p>Estatus: <span class="etiqueta-estatus">Rechazada</span></p>
-      <a class="boton" href="vacante.html#auxiliar-oficina">Ver vacante</a>
-    </article>
-
-    <p>Las solicitudes aceptadas o rechazadas no pueden cancelarse.</p>
-    <a class="boton" href="index.html">Buscar más empleos</a>
-  </main>
-
-  <footer class="pie contenedor" id="ayuda">
-    <h2>Ayuda AMAC</h2>
-    <p>Solicita ayuda a AMAC por teléfono. Número pendiente de confirmar.</p>
-  </footer>
+  <header class="encabezado contenedor"><p class="nombre-sitio">AMAC · Bolsa de trabajo</p><nav aria-label="Navegación principal"><a href="index.html">Vacantes</a><a href="mis-solicitudes.html" aria-current="page">Mis solicitudes</a><a href="login.html">Iniciar sesión</a><a href="registro-candidato.html">Registro de candidato</a><a href="empresa-vacantes.html">Panel de empresa</a></nav><a class="boton" href="#ayuda">Ayuda AMAC</a></header>
+  <main id="principal" class="contenedor" tabindex="-1"><section class="panel"><h1>Mis solicitudes</h1><div class="solicitudes">
+    <article class="tarjeta"><h2>Auxiliar de tienda</h2><p><strong>Empresa:</strong> Ejemplo</p><p><strong>Fecha de solicitud:</strong> 26/10/2026</p><p><strong>Estado:</strong> <span class="estado">Pendiente</span></p><button class="boton boton-peligro" type="button">Cancelar solicitud</button></article>
+    <article class="tarjeta"><h2>Asistente de ventas</h2><p><strong>Empresa:</strong> Comercio AMAC</p><p><strong>Fecha de solicitud:</strong> 20/10/2026</p><p><strong>Estado:</strong> <span class="estado estado-aceptada">Aceptada</span></p><p class="texto-ayuda">Las solicitudes aceptadas o rechazadas no pueden cancelarse.</p></article>
+    <article class="tarjeta"><h2>Recepcionista</h2><p><strong>Empresa:</strong> Servicios del Norte</p><p><strong>Fecha de solicitud:</strong> 15/10/2026</p><p><strong>Estado:</strong> <span class="estado estado-rechazada">Rechazada</span></p></article>
+  </div><a class="boton" href="index.html">Buscar más empleos</a></section></main>
+  <footer class="pie contenedor" id="ayuda"><h2>Ayuda AMAC</h2><p>Comunícate al <strong>81 1234 5678</strong>.</p></footer>
 </body>
 </html>
