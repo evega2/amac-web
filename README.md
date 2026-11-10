@@ -67,8 +67,8 @@ Variables de `css/variables.css`:
 
 ### Vista en computadora
 
-![Vista en computadora](img/computadora.png)
+![Vista en computadora](img/Computadora.png)
 
 ### Vista en teléfono
 
-![Vista en teléfono](img/telefono.png)
+![Vista en teléfono](img/Telefono.png)
