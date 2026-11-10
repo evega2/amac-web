@@ -1,0 +1,38 @@
+.contenedor {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.encabezado, main, .pie {
+  padding: var(--espacio-l) 0;
+}
+
+.nombre-sitio {
+  font-size: var(--texto-h2);
+  font-weight: bold;
+}
+
+.encabezado nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.encabezado nav a {
+  display: inline-block;
+  min-height: 44px;
+  padding: var(--espacio-s);
+}
+
+.encabezado .boton {
+  width: 100%;
+  margin-top: var(--espacio-m);
+}
+
+@media (min-width: 768px) {
+  .encabezado nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
